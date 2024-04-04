@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: rgb(0, 153, 175);
+    background: rgb(255, 255, 255);
 }
 
 .container {
@@ -70,22 +70,29 @@ body {
 }
 
 .navbar .hambuger {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 55px;
+    border-radius: 15px;
     display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: transform 0.3s ease;
+    background-color: rgb(184, 184, 184);
+}
+
+.navbar .hambuger:hover {
+    opacity: 0.8;
 }
 
 .bar1,
 .bar2,
 .bar3 {
     background-color: black;
-    height: 4px;
-    width: 36px;
-    margin: 3px;
+    height: 2px;
+    width: 22px;
+    margin: 2px;
     border-radius: 10px;
 }
 
@@ -309,7 +316,7 @@ body {
     }
 
     to {
-        transform: rotate(45deg) translate(4px, 10px);
+        transform: rotate(45deg) translate(4px, 5px);
     }
 }
 
@@ -319,7 +326,7 @@ body {
     }
 
     to {
-        transform: rotate(-45deg) translate(4px, -10px);
+        transform: rotate(-45deg) translate(4px, -5px);
     }
 }
 
